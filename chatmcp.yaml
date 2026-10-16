@@ -1,0 +1,24 @@
+name: hackernews-mcp
+description: Get current top stories from Hacker News. No API key required.
+author: https://github.com/beaulooooooo/beaulo-repository
+license: MIT
+tags:
+  - beaulo
+  - mcp
+
+params:
+  type: object
+  properties: {}
+
+local: |
+  python server.py
+
+config: |
+  {
+    "mcpServers": {
+      "hackernews": {
+        "command": "C:\Users\Administrator\Desktop\test\venv\Scripts\python.exe",
+        "args": ["server.py"]
+      }
+    }
+  }
